@@ -2,11 +2,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OnlineCustomerLoyaltyPrgAndTestNS;
 
-namespace VendorTestSimplePoint
+namespace VendorTest
 {
 
     [TestClass]
-    public class givPoint
+    public class givSimplePoint
     {
         
         ProductVendor Hat_ProdVendor;
@@ -49,5 +49,28 @@ namespace VendorTestSimplePoint
             points = Hat_ProdVendor.requirePoints(customer, 2, 1);
             Assert.AreEqual(10, points);
         }
+
+        [TestMethod]
+        public void badItemId()
+        {
+            Hat_ProdVendor.requirePoints(customer, 117, 1);
+
+            Hat_ProdVendor.requirePoints(customer, -117, 1);
+        }
+        [TestMethod]
+        public void badItemQty()
+        {
+            try
+            {
+                Hat_ProdVendor.requirePoints(customer, 1, -1);
+            }
+            catch (ArgumentException ae)
+            {
+
+            }
+            Assert.Fail("ArgumentException expected");
+        }
+
+
     }
 }
