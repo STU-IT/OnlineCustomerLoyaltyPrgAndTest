@@ -13,16 +13,17 @@ namespace CustomerTest
         [TestMethod]
         public void TestMethod1()
         {
+            Assert.Fail("Not implemented yet");
         }
 
         // TODO ELEV Opret en test der kontrolerer antal point ved køb af 0 varer
-        // TODO ELEV og commit til git
+        // TODO ELEV    og commit til git
         // TODO ELEV Opret en test der kontrolerer antal point ved køb af 1 vare
-        // TODO ELEV og commit til git
-        // TODO ELEV Opret en test der kontrolerer antal point ved køb af 2 ens varer fra samme leverander
-        // TODO ELEV og commit til git
-        // TODO ELEV Opret en test der kontrolerer antal point ved køb af 2 forskellige varer fra samme leverander
-        // TODO ELEV og commit til git
+        // TODO ELEV    og commit til git
+        // TODO ELEV Opret en test der kontrolerer antal point ved køb af 2 ens varer fra samme leverandør (vendor)
+        // TODO ELEV    og commit til git
+        // TODO ELEV Opret en test der kontrolerer antal point ved køb af 2 forskellige varer fra samme leverandør (vendor)
+        // TODO ELEV    og commit til git
 
     }
 }
